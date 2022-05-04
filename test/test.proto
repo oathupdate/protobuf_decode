@@ -1,0 +1,19 @@
+syntax = "proto2";
+
+package TestProto;
+
+message Struct {
+  required string struct_string = 1;
+  required int32  struct_int32 = 2;
+}
+
+message Test {
+  required int32 test_int32_1 = 1;
+  required int32 test_int32_2 = 2;
+  required int32 test_int32_3 = 3;
+  required string test_string_1 = 4;
+  optional string test_string_2 = 5;
+  required string test_string_3 = 6;
+  repeated string test_array = 7;
+  repeated Struct struct = 8;
+}
